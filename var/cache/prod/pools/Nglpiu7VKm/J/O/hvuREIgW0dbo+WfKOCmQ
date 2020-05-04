@@ -1,0 +1,155 @@
+<?php //%255BApp%255CEntity%255CPlanet%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\BigIntegerIdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\BigIntegerIdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Planet',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Planet',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\PlanetRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'bigint',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'name',
+                    ],
+                    'diameter' => [
+                        'fieldName' => 'diameter',
+                        'type' => 'bigint',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'diameter',
+                    ],
+                    'density' => [
+                        'fieldName' => 'density',
+                        'type' => 'bigint',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'density',
+                    ],
+                    'gravitation' => [
+                        'fieldName' => 'gravitation',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'gravitation',
+                    ],
+                    'weight' => [
+                        'fieldName' => 'weight',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'weight',
+                    ],
+                    'distancefromsun' => [
+                        'fieldName' => 'distancefromsun',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'distanceFromSun',
+                    ],
+                    'numberofmoons' => [
+                        'fieldName' => 'numberofmoons',
+                        'type' => 'bigint',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'numberOfMoons',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'diameter' => 'diameter',
+                    'density' => 'density',
+                    'gravitation' => 'gravitation',
+                    'weight' => 'weight',
+                    'distanceFromSun' => 'distancefromsun',
+                    'numberOfMoons' => 'numberofmoons',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'diameter' => 'diameter',
+                    'density' => 'density',
+                    'gravitation' => 'gravitation',
+                    'weight' => 'weight',
+                    'distancefromsun' => 'distanceFromSun',
+                    'numberofmoons' => 'numberOfMoons',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'planet',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

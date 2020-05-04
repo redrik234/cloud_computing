@@ -1,0 +1,75 @@
+<?php //%255Bd8aed056d93b8ce4aacce1c51094f6a6%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT p0_.id AS id_0, p0_.name AS name_1, p0_.diameter AS diameter_2, p0_.density AS density_3, p0_.gravitation AS gravitation_4, p0_.weight AS weight_5, p0_.distanceFromSun AS distanceFromSun_6, p0_.numberOfMoons AS numberOfMoons_7 FROM planet p0_ ORDER BY p0_.id ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'p' => 'App\\Entity\\Planet',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'name_1' => 'name',
+                    'diameter_2' => 'diameter',
+                    'density_3' => 'density',
+                    'gravitation_4' => 'gravitation',
+                    'weight_5' => 'weight',
+                    'distanceFromSun_6' => 'distancefromsun',
+                    'numberOfMoons_7' => 'numberofmoons',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'p' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'p',
+                    'name_1' => 'p',
+                    'diameter_2' => 'p',
+                    'density_3' => 'p',
+                    'gravitation_4' => 'p',
+                    'weight_5' => 'p',
+                    'distanceFromSun_6' => 'p',
+                    'numberOfMoons_7' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Planet',
+                    'name_1' => 'App\\Entity\\Planet',
+                    'diameter_2' => 'App\\Entity\\Planet',
+                    'density_3' => 'App\\Entity\\Planet',
+                    'gravitation_4' => 'App\\Entity\\Planet',
+                    'weight_5' => 'App\\Entity\\Planet',
+                    'distanceFromSun_6' => 'App\\Entity\\Planet',
+                    'numberOfMoons_7' => 'App\\Entity\\Planet',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
